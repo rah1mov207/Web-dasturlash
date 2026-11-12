@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Baraka Cafe restoranida stol band qilish va biz bilan bog'lanish.">
+    <title>Baraka Cafe — Stol band qilish</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="yuqori">
+
+    <header>
+        <h1>Baraka Cafe</h1>
+        <p>Stol band qilish sahifasi</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="batafsil.html">Menyu</a></li>
+            <li><a href="aloqa.html">Aloqa va band qilish</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Stol band qilish</h2>
+
+            <p>
+                Hurmatli mehmon! Quyidagi formani to'ldirib,
+                Baraka Cafe'da stol band qilish uchun so'rov yuboring.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="forma-maydoni">
+                    <label for="ism">Ism va familiya:</label>
+                    <input
+                        type="text"
+                        id="ism"
+                        name="ism"
+                        placeholder="Ismingizni kiriting"
+                        required
+                    >
+                </div>
+
+                <div class="forma-maydoni">
+                    <label for="email">Elektron pochta:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                        required
+                    >
+                </div>
+
+                <div class="forma-maydoni">
+                    <label for="telefon">Telefon raqami:</label>
+                    <input
+                        type="tel"
+                        id="telefon"
+                        name="telefon"
+                        placeholder="+998901234567"
+                        pattern="\+998[0-9]{9}"
+                        title="Telefonni +998901234567 shaklida kiriting"
+                        required
+                    >
+                </div>
+
+                <div class="forma-maydoni">
+                    <label for="sana">Band qilish sanasi:</label>
+                    <input
+                        type="date"
+                        id="sana"
+                        name="sana"
+                        required
+                    >
+                </div>
+
+                <div class="forma-maydoni">
+                    <label for="vaqt">Kelish vaqti:</label>
+                    <input
+                        type="time"
+                        id="vaqt"
+                        name="vaqt"
+                        required
+                    >
+                </div>
+
+                <div class="forma-maydoni">
+                    <label for="mehmon">Mehmonlar soni:</label>
+                    <input
+                        type="number"
+                        id="mehmon"
+                        name="mehmon"
+                        min="1"
+                        max="30"
+                        value="2"
+                        required
+                    >
+                </div>
+
+                <div class="forma-maydoni">
+                    <label for="joy">Joy turi:</label>
+                    <select id="joy" name="joy" required>
+                        <option value="">Joyni tanlang</option>
+                        <option value="zal">Asosiy zal</option>
+                        <option value="ayvon">Ayvon</option>
+                        <option value="oilaviy">Oilaviy stol</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Buyurtma turi</legend>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="buyurtma"
+                            value="joyida"
+                            required
+                        >
+                        Joyida buyurtma beraman
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="buyurtma"
+                            value="oldindan"
+                        >
+                        Taomni oldindan buyurtma qilaman
+                    </label>
+                </fieldset>
+
+                <div class="forma-maydoni">
+                    <label for="taom">Sevimli taomingiz:</label>
+                    <select id="taom" name="taom">
+                        <option value="tanlanmagan">Hozircha tanlamadim</option>
+                        <option value="osh">Osh</option>
+                        <option value="shivit-oshi">Shivit oshi</option>
+                        <option value="kabob">Kabob</option>
+                        <option value="mastava">Mastava</option>
+                    </select>
+                </div>
+
+                <div class="forma-maydoni">
+                    <label for="izoh">Qo'shimcha izoh:</label>
+                    <textarea
+                        id="izoh"
+                        name="izoh"
+                        rows="5"
+                        placeholder="Istaklaringizni yozing..."
+                    ></textarea>
+                </div>
+
+                <div class="forma-maydoni">
+                    <label>
+                        <input
+                            type="checkbox"
+                            id="rozilik"
+                            name="rozilik"
+                            value="ha"
+                            required
+                        >
+                        Kiritilgan ma'lumotlar to'g'riligini tasdiqlayman.
+                    </label>
+                </div>
+
+                <button type="submit">Stol band qilish</button>
+
+            </form>
+        </section>
+
+        <aside>
+            <h2>Aloqa ma'lumotlari</h2>
+            <p>Manzil: Urganch shahri, Xorazm viloyati.</p>
+            <p>Telefon: <a href="tel:+998901234567">+998 90 123 45 67</a></p>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p class="izoh">
+                Telefon va email namunaviy. Haqiqiy ma'lumotlaringiz bilan almashtiring.
+            </p>
+        </aside>
+
+        <p><a href="#yuqori">Yuqoriga qaytish ↑</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Baraka Cafe</p>
+        <p><a href="index.html">Bosh sahifa</a></p>
+        <p><a href="batafsil.html">Menyu</a></p>
+    </footer>
+
+</body>
+</html>
